@@ -1,0 +1,14 @@
+---------- Date: 2020-02-04 06:50:26 ~ IP : 216.244.66.227 ----------
+REQUEST URI : /index.php?route=product/product&product_id=333
+MOD DETAILS:
+   modFile   : /www/htdocs/w019bb56/your-plate.de/vqmod/xml/trustedshops.xml
+   id        : Trusted Shops module
+   version   : 1.1.1
+   vqmver    : 1.1.1
+   author    : RNM
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <h1><?php echo $heading_title; ?></h1>
+----------------------------------------------------------------------
+
+

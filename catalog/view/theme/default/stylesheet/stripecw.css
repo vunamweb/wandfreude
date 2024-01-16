@@ -1,0 +1,73 @@
+
+.stripecw-confirmation-form .stripecw-error {
+	margin-left: 230px;
+	color: #D8000C;
+}
+
+.stripecw-iframe {
+	width: 100%;
+	border: none;
+}
+
+.stripecw-widget {
+	width: 100%;
+	border: none;
+}
+
+
+
+.stripecw-confirmation-form .card-brand-image-box {
+	display: inline-block;
+}
+
+
+.stripecw-confirmation-form .card-brand-image-color.brand-is-deselected {
+	display:none;
+}
+
+.stripecw-confirmation-form .card-brand-image-grey.brand-is-selected {
+	display:none;
+}
+
+.stripecw-confirmation-form .card-brand-image-selection img {
+	width:auto;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.stripecw-confirmation-form .invalid-card-number, .stripecw-confirmation-form .invalid-cvc-number {
+	border-color: #fb7f88;
+	background-image: url(../image/invalid.png);
+	background-position: 95% center;
+	background-repeat: no-repeat;
+}
+
+.stripecw-confirmation-form .valid-card-number, .stripecw-confirmation-form .valid-cvc-number {
+	background-image: url(../image/valid.png);
+	background-position: 95% center;
+	background-repeat: no-repeat;
+}
+
+.stripecw-confirmation-form .stripecw-card-cvc input[type='text']{
+	width: 60px;
+}
+.stripecw-confirmation-form .stripecw-expiration-date select {
+	margin-right: 5px;
+}
+.stripecw-confirmation-form .card-brand-image-selection {
+	margin-top: 3px;
+}
+
+.stripecw-alias-pane {
+	margin-bottom: 20px;
+}
+
+.stripecw-alias-manager-form .col-sm-8{
+	padding-left: 0;
+}
+
+#stripecw-checkout-form-pane .col-sm-4, #stripecw-checkout-form-pane .col-sm-8{
+	padding-left: 0;
+}
+
+

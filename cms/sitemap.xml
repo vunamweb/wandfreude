@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+<!-- Created by www.pixel-dusche.de - CMS morpheus -->
+<!-- Last update of sitemap 2020-04-18 -->
+<url>
+<loc>http://localhost/your-plate/</loc>
+<lastmod>2019-12-23T14:20:09+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>http://localhost/your-plate/vorher-nachher/</loc>
+<lastmod>2019-12-23T14:20:14+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>http://localhost/your-plate/faq/</loc>
+<lastmod>2019-12-27T12:56:41+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>http://localhost/your-plate/dsgvo-datenschutzrechtliche/</loc>
+<lastmod>2019-12-23T14:20:20+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>http://localhost/your-plate/impressum/</loc>
+<lastmod>2019-12-23T14:20:26+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>http://localhost/your-plate/widerruf/</loc>
+<lastmod>2019-10-30T13:46:26+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>http://localhost/your-plate/agb/</loc>
+<lastmod>2019-12-23T14:20:40+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>http://localhost/your-plate/versandinformation/</loc>
+<lastmod>2020-01-23T13:30:51+00:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+</urlset>

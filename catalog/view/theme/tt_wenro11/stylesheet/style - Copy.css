@@ -1,0 +1,187 @@
+#height{}
+
+#width{position: absolute; left: 21px; top: 100%}
+
+.small{
+    width: 40px;
+    font-size: 14px;
+}
+
+#width2, #width3{display: inline-block;opacity: 0;}
+#height2, #height3{display: block;opacity: 0;}
+#height1{
+    margin-left: 20px;
+    height: 22px;
+}
+.button-cut{
+    display: inline-block;
+    background: #3dc8df;
+    /*padding: 0 10px;*/
+}
+.change-direction{background: #878786; float: right; margin-right: 2px;}
+
+.padding_plates{float: left;margin-right: 0px;cursor: pointer;}
+.plate_1{
+    background: url('../image/number_plates/1_.png');
+    background-size: cover !important; 
+    background-repeat: no-repeat !important;
+    width: 55px;
+    height: 42px;
+    padding-left: 26px;
+    padding-top: 9px;
+    
+}
+.plate_2{
+    background: url(../image/number_plates/2.png);
+    background-size: cover !important; 
+    background-repeat: no-repeat !important;
+    width: 75px;
+    height: 54px;
+    padding-left: 26px;
+    padding-top: 9px;
+    background-size: cover;
+    padding-left: 44px;
+}
+.plate_3{
+    background: url(../image/number_plates/3.png);
+    background-size: cover !important; 
+    background-repeat: no-repeat !important;
+    width: 75px;
+    height: 54px;
+    padding-left: 26px;
+    padding-top: 9px;
+    background-size: cover;
+    padding-left: 36px;
+}
+.number_plates{margin-top: 30px; margin-bottom: 90px;}
+
+.modal-dialogz{width: 100%;}
+.drawimage #myModal img{
+    margin: auto;
+    display: block;
+}
+.modal-contentz{text-align: center;}
+.modal-body{padding: 0;}
+#myModal{padding-right: 15px !important;}
+
+.rcrop-wrapper .rcrop-outer-wrapper{opacity: 0;}
+
+#draw-line{position: absolute; left: 15px; top: 15px;}
+
+.image-additional-container{display: none;}
+
+#source{opacity: 0;}
+
+.hide{display: none;}
+
+.well{display: none;}
+
+ul.list_category{list-style: none;padding-bottom: 20px;}
+ul.list_category li{
+    float: left;
+    padding-right: 30px;
+    position: relative;
+}
+ul.list_category li:after{
+    font-family: FontAwesome;
+    padding-left: 10px;
+    position: absolute; 
+    top: -5px;
+    content: "|";
+    font-size: 19px;
+    right: 14px;
+}
+
+#height2, #height3{display: none;}
+
+.col-3-price{padding-top: 20px; padding-bottom: 50px; background: #dddddc;}
+
+.button-cart-plates{
+    background: none !important;
+    border-radius: 0 !important;
+    background-color: #a5cff0 !important;
+    padding-left: 5px !important;
+    margin-top: 10px !important;
+}
+.button-cart-plates span{color: #000 !important}
+
+.col-3-price p{margin: 0 !important}
+
+.price{font-weight: bold;}
+
+.randomproduct-module .module-title2{
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 0;
+    
+}
+.randomproduct-module p{margin: 0; font-weight: bold;}
+.randomproduct-module p.konfiguration{
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.random-products-slider{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px 2px #dcdcdc;
+}
+.random-products-slider .owl-item{padding-left: 0;}
+.random-products-slider .product-grid.layout2 .product-thumb .image{width: 100%;}
+.random-products-slider.owl-carousel .owl-item{padding: 0!important;}
+.random-products-slider .product-grid .product-thumb .image{margin-bottom: 0;}
+
+.col-2{padding-left: 5%;}
+
+.w_radio input[type=radio]{
+    display: none;
+}
+.w_radio input[type=radio] + label.check:before{
+    border: 1px solid #ccc;
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    top: 8px;
+}
+.w_radio input[type=radio]:checked + label.check:before{
+    background: #3dc8df;
+}
+.w_radio label.name{
+    padding: 0;
+}
+.fa-info-circle:before{font-family: FontAwesome; color: #3dc8df; cursor: pointer; font-size: 15px;}
+
+@media (max-width: 786px)
+{
+    .col-2{
+      width: 100%;
+      padding-left: 15px;
+      padding-bottom: 20px;
+    }
+    
+    .col-3-price{
+        float: left;
+        margin-top: 30px;
+    }
+    
+    .col-1{
+        float: left;
+        width : 100%;
+    }
+    
+    #height{
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      left: auto !important;
+      top: auto !important;
+    }
+    
+}
+

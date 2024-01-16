@@ -1,0 +1,127 @@
+<modification>
+	<name>Google Analytics Enhanced Tracking</name>
+    <author>opencarttools@gmail.com</author>
+	<version>2.X - 3.X</version>
+    <link>http://www.opencarttools.net</link>
+	<code>34016</code>
+	<file path="admin/controller/common/menu.php">
+        <operation error="skip">
+            <search position="after"><![CDATA[function index]]></search>
+			<add position="after"><![CDATA[
+			if($this->user->hasPermission('access', 'extension/gaenhpro') && file_exists('model/extension/gaenhpro.php')) { 
+				$data['gaenhpro'] = $this->url->link('extension/gaenhpro', 'token=' . $this->session->data['token'], 'SSL');	
+			}]]></add> 
+        </operation>
+  	</file>
+ 	<file path="admin/view/template/common/menu.tpl">
+        <operation error="skip">
+            <search position="after" offset="4"><![CDATA[$report_affiliate_activity]]></search>
+			<add position="after" offset="4"><![CDATA[<?php if(isset($gaenhpro)) { ?> <li id="gaenhpro"><a href="<?php echo $gaenhpro; ?>"><i class="fa fa-arrow-right fa-fw"></i> <span>Google Analytics Enhanced Tracking</span></a></li> <?php } ?>]]></add> 
+        </operation>
+  	</file>
+	<file path="admin/controller/common/column_left.php">
+        <operation error="skip">
+            <search position="before"><![CDATA[$report = array();]]></search>
+			<add position="before"><![CDATA[
+			if($this->user->hasPermission('access', 'extension/gaenhpro') && file_exists('model/extension/gaenhpro.php')) { 
+				$data['menus'][] = array(
+					'id'       => 'menu-gaenhpro',
+					'icon'	   => 'fa-arrow-right', 
+					'name'	   => 'Google Analytics Enhanced Tracking',
+					'href'     => $this->url->link('extension/gaenhpro', 'token=' . $this->session->data['token'], true),
+					'children' => array()
+				);	
+			}]]></add> 
+        </operation>
+  	</file>
+	<file path="catalog/controller/common/header.php">
+		<operation error="skip">
+            <search position="after"><![CDATA[function index]]></search>
+            <add position="after"><![CDATA[$data['gaenhpro_gettrackcode'] = '';
+			if(file_exists('catalog/model/extension/gaenhpro.php')) { 
+				$this->load->model('extension/gaenhpro');
+				$this->document->addScript('catalog/view/javascript/gaenhpro.js');
+				$data['gaenhpro_gettrackcode'] = $this->model_extension_gaenhpro->gettrackcode();
+			}]]></add> 
+        </operation>
+    </file>
+	<file path="catalog/view/theme/*/template/common/header.tpl">
+		<operation error="skip">
+			<search position="before"><![CDATA[</head>]]></search>
+			<add position="before"><![CDATA[<?php echo $gaenhpro_gettrackcode;?>]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/product/product.php">
+		<operation error="skip">
+            <search position="after"><![CDATA[$data['footer'] =]]></search>
+            <add position="after"><![CDATA[if(file_exists('catalog/model/extension/gaenhproprodpage.php')) { 
+				$this->load->model('extension/gaenhproprodpage');
+				$data['footer'] .= $this->model_extension_gaenhproprodpage->getcode(isset($this->request->get['product_id']) ? $this->request->get['product_id'] : 0);
+			}]]></add>
+        </operation> 
+    </file>
+	<file path="catalog/controller/product/search.php">
+		<operation error="skip">
+            <search position="after"><![CDATA[$data['footer'] =]]></search>
+            <add position="after"><![CDATA[if(file_exists('catalog/model/extension/gaenhprosearchprod.php')) { 
+				$this->load->model('extension/gaenhprosearchprod');
+				$data['footer'] .= $this->model_extension_gaenhprosearchprod->getcode(isset($this->request->get['search']) ? $this->request->get['search'] : '');
+			}]]></add>
+        </operation> 
+    </file>
+	<file path="catalog/controller/account/login.php">
+		<operation error="skip">
+            <search position="after"><![CDATA[$data['footer'] =]]></search>
+            <add position="after"><![CDATA[if(file_exists('catalog/model/extension/gaenhprologreg.php')) { 
+				$this->load->model('extension/gaenhprologreg');
+				$data['footer'] .= $this->model_extension_gaenhprologreg->getcode(1);
+			}]]></add>
+        </operation> 
+    </file>
+	<file path="catalog/controller/account/register.php">
+		<operation error="skip">
+            <search position="after"><![CDATA[$data['footer'] =]]></search>
+            <add position="after"><![CDATA[if(file_exists('catalog/model/extension/gaenhprologreg.php')) { 
+				$this->load->model('extension/gaenhprologreg');
+				$data['footer'] .= $this->model_extension_gaenhprologreg->getcode(2);
+			}]]></add>
+        </operation> 
+    </file>
+	<file path="catalog/controller/checkout/checkout.php">
+		<operation error="skip">
+            <search position="after"><![CDATA[$data['footer'] =]]></search>
+            <add position="after"><![CDATA[if(file_exists('catalog/model/extension/gaenhprochkbeg.php')) { 
+				$this->load->model('extension/gaenhprochkbeg');
+				$data['footer'] .= $this->model_extension_gaenhprochkbeg->getcode();
+			}]]></add>
+        </operation> 
+    </file>	
+	<file path="catalog/controller/mail/order.php">
+        <operation error="skip">
+            <search position="after"><![CDATA[function add]]></search>
+            <add position="after"><![CDATA[$this->session->data['gaenhpro_order_id'] = $order_info['order_id'];]]></add>
+        </operation>
+    </file>
+	<file path="catalog/model/checkout/order.php">
+        <operation error="skip">
+            <search position="after"><![CDATA[$order_id = $this->db->getLastId();]]></search>
+            <add position="after"><![CDATA[$this->session->data['gaenhpro_order_id'] = $order_id;]]></add>
+        </operation>
+    </file>
+	<file path="catalog/controller/checkout/success.php">
+        <operation error="skip">
+            <search position="after"><![CDATA[function index]]></search>
+            <add position="after"><![CDATA[$data['gaenhprochksuccess_code'] = '';
+			if(file_exists('catalog/model/extension/gaenhprochksuccess.php')) {
+				$this->load->model('extension/gaenhprochksuccess');
+				$data['gaenhprochksuccess_code'] = $this->model_extension_gaenhprochksuccess->getcode(!empty($this->session->data['order_id']) ? $this->session->data['order_id'] : 0);
+			}]]></add>
+        </operation>
+		<operation error="skip">
+            <search position="after"><![CDATA[$data['footer'] =]]></search>
+            <add position="after"><![CDATA[if(!empty($data['gaenhprochksuccess_code'])) {
+				$data['footer'] .= $data['gaenhprochksuccess_code'];
+			}]]></add>
+        </operation> 
+    </file>
+</modification>

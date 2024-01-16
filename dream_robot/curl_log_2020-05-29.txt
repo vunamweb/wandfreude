@@ -1,0 +1,620 @@
+04:34:02 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_post_pixel-dusche_de_13863:BUTevenusESYpeteSASALusEtu8AdYPYpuZUsUhU
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => 50053d15f5e1575977d2202c74ffaaee27a36b4d427d5b22dd2a76f056056d49e3944fc07bb019d9ae76075aa4fedeebacafe70f040abe97cc2e1cf344caac48a7f29a41dc19935bb0c32987c6987213
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+06:19:36 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_post_pixel-dusche_de_13863:BUTevenusESYpeteSASALusEtu8AdYPYpuZUsUhU
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => edcd6456626495bbce1fdcf927faab82bdd564c6b499a13727d10385b06463c3f667698692cab5f46d1dedd892e2c95ea9283e527deca01db4e709204c3c9a0715794cfdd913c55b906630e037083f6e
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+06:21:00 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_post_pixel-dusche_de_13863:BUTevenusESYpeteSASALusEtu8AdYPYpuZUsUhU
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => 47a2e0363ba3cf42302dc59d8a0c9324571b84ae3b9273ea3a4a848e3f9ff8e711141ab1ece78b7076b397127e19e653ddf2205248d41b37a0996a54833803afcf28bbf87b0579a50a2ba57b5fb68edd
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+06:26:13 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_post_pixel-dusche_de_13863:BUTevenusESYpeteSASALusEtu8AdYPYpuZUsUhU
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => 9f5748587affba0822d26f3a771db335f8288d2a1ab39bde3d63f3a482a55313d2b9adf1a32c95071a85012837cb95ba7b7e215e07859f4870b8b2e7116e24261143ca354dc48ba3cdfde0bfe08e2cc5
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+10:03:08 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_post_pixel-dusche_de_13863:BUTevenusESYpeteSASALusEtu8AdYPYpuZUsUhU
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => a7f03139a2d0c2160873229e8d826909c731c398ab37a2ea76db4de1032e04914558700369ed49f1047479d901ed3f5b7b53f25eba392d0bc5fd1ddb1e85a95754012d0d8d8915f4ba07f635813aa1e5
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+10:12:21 | HTTP-Error: 401
+URL: https://api.dreamrobot.de/rest/v1.1/order/
+POST-Daten: Array
+(
+    [portal_account_id] => 22014
+    [order] => Array
+        (
+            [customer] => Array
+                (
+                    [email] => my.customers@mail.adress
+                    [address] => Array
+                        (
+                            [name] => Max Mustermann
+                        )
+
+                )
+
+            [line] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 0
+                            [name] => Example article 1
+                            [quantity] => 5
+                            [price] => 34.5
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 1
+                            [name] => Example article 2
+                            [quantity] => 35
+                            [price] => 4.25
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer 
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => invalid_request
+                    [description] => Malformed auth header
+                    [code] => 400
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+10:34:17 | HTTP-Code: 201
+URL: https://api.dreamrobot.de/rest/v1.1/order/
+POST-Daten: Array
+(
+    [portal_account_id] => 22014
+    [order] => Array
+        (
+            [customer] => Array
+                (
+                    [email] => my.customers@mail.adress
+                    [address] => Array
+                        (
+                            [name] => Max Mustermann
+                        )
+
+                )
+
+            [line] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 0
+                            [name] => Example article 1
+                            [quantity] => 5
+                            [price] => 34.5
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 1
+                            [name] => Example article 2
+                            [quantity] => 35
+                            [price] => 4.25
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer a7f03139a2d0c2160873229e8d826909c731c398ab37a2ea76db4de1032e04914558700369ed49f1047479d901ed3f5b7b53f25eba392d0bc5fd1ddb1e85a95754012d0d8d8915f4ba07f635813aa1e5
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [order_id] => 7_2020_05
+    [ack] => success
+)
+
+
+
+11:32:26 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_post_pixel-dusche_de_13863:BUTevenusESYpeteSASALusEtu8AdYPYpuZUsUhU
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => d01158382695af13b1b5063f43aa3798441f4dc825d5751a40ce1c5fa82e95947eb3d4678f60b4e6880bd362d50ec0211fcf6b3d6fa86bc0c6f971154c41aaab6f9825df6a02aaaffb05dbb79417f13c
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+12:12:01 | HTTP-Code: 201
+URL: https://api.dreamrobot.de/rest/v1.1/order/
+POST-Daten: Array
+(
+    [portal_account_id] => 22014
+    [order] => Array
+        (
+            [customer] => Array
+                (
+                    [email] => vunamkhtn@yahoo.com
+                    [address] => Array
+                        (
+                            [name] => bsmar01(material: Alu Basic matt 3 mm, GESPIEGELT: Nein,Experte: Nein,Abmessungen: 2000*1200;2000*900;)
+                        )
+
+                )
+
+            [line] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 0
+                            [name] => bsmar01(material: Alu Basic matt 3 mm, GESPIEGELT: Nein,Experte: Nein,Abmessungen: 2000*1200;2000*900;)
+                            [quantity] => 1
+                            [price] => 207.2700
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer d01158382695af13b1b5063f43aa3798441f4dc825d5751a40ce1c5fa82e95947eb3d4678f60b4e6880bd362d50ec0211fcf6b3d6fa86bc0c6f971154c41aaab6f9825df6a02aaaffb05dbb79417f13c
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [order_id] => 8_2020_05
+    [ack] => success
+)
+
+
+
+12:19:38 | HTTP-Code: 201
+URL: https://api.dreamrobot.de/rest/v1.1/order/
+POST-Daten: Array
+(
+    [portal_account_id] => 22014
+    [order] => Array
+        (
+            [customer] => Array
+                (
+                    [email] => vunamkhtn@yahoo.com
+                    [address] => Array
+                        (
+                            [name] => gfdgfdfgfg
+                        )
+
+                )
+
+            [line] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 0
+                            [name] => bsmar01(material: Alu Basic matt 3 mm, GESPIEGELT: Nein,Experte: Nein,Abmessungen: 2000*1200;2000*900;)
+                            [quantity] => 1
+                            [price] => 207.2700
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer d01158382695af13b1b5063f43aa3798441f4dc825d5751a40ce1c5fa82e95947eb3d4678f60b4e6880bd362d50ec0211fcf6b3d6fa86bc0c6f971154c41aaab6f9825df6a02aaaffb05dbb79417f13c
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [order_id] => 8_2020_05
+    [ack] => success
+)
+
+
+
+12:45:39 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_post_pixel-dusche_de_13863:BUTevenusESYpeteSASALusEtu8AdYPYpuZUsUhU
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => 14559e237f221db8b90c032ad2a6cc9a1a6b1fdd4dc53e94bdd7a03e1175b6b98b3ee42432e46128b049783708841b249ae28fb90b117cd79e22e118eb7aaaa28cc44b510c36991c59f1e9761cc12f5a
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+12:56:16 | HTTP-Code: 201
+URL: https://api.dreamrobot.de/rest/v1.1/order/
+POST-Daten: Array
+(
+    [portal_account_id] => 22014
+    [order] => Array
+        (
+            [customer] => Array
+                (
+                    [email] => vunamkhtn@yahoo.com
+                    [address] => Array
+                        (
+                            [name] => gfdgfdfgfg
+                        )
+
+                )
+
+            [line] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 0
+                            [name] => bsmar01(material: Alu Basic matt 3 mm, GESPIEGELT: Nein,Experte: Nein,Abmessungen: 2000*1200;2000*900;)
+                            [quantity] => 1
+                            [price] => 207.2700
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer 14559e237f221db8b90c032ad2a6cc9a1a6b1fdd4dc53e94bdd7a03e1175b6b98b3ee42432e46128b049783708841b249ae28fb90b117cd79e22e118eb7aaaa28cc44b510c36991c59f1e9761cc12f5a
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [order_id] => 12_2020_05
+    [ack] => success
+)
+
+
+
+12:56:38 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/order/12_2020_05/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 216
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer 14559e237f221db8b90c032ad2a6cc9a1a6b1fdd4dc53e94bdd7a03e1175b6b98b3ee42432e46128b049783708841b249ae28fb90b117cd79e22e118eb7aaaa28cc44b510c36991c59f1e9761cc12f5a
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [order_id] => 12_2020_05
+    [ack] => success
+)
+
+
+

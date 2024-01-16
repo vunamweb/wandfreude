@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<name>stripecw</name>
+	<version>1.0.0</version>
+	<author>customweb ltd</author>
+
+	<!-- Add menu link to header controller in 2.3 -->
+	<file path="admin/controller/common/column_left.php">
+		<operation>
+			<search><![CDATA[if ($this->user->hasPermission('access', 'sale/recurring')) {]]></search>
+			<add position="before"><![CDATA[
+			
+			if ($this->user->hasPermission('access', 'stripecw/transaction')) {
+				require_once (dirname(DIR_SYSTEM) . '/system/library/cw/StripeCw/init.php');
+				StripeCw_Util::setRegistry($this->registry);
+				
+				$sale[] = array(
+					'name'	   => StripeCw_Language::_('Stripe Transactions'),
+					'href'     => $this->url->link('stripecw/transaction', 'token=' . $this->session->data['token'], 'SSL'),
+					'children' => array()		
+				);
+			}
+
+			]]></add>
+		</operation>
+	</file>
+
+	<!--The 'route' parameter may be sent via POST. We make here sure OpenCart 
+		receives the parameter. -->
+	<file path="system/engine/action.php">
+		<operation>
+			<search><![CDATA[<?php]]></search>
+			<add position="after"><![CDATA[if (isset($_POST['route']) && !isset($_GET['route'])) { $_GET['route'] = $_POST['route'];}]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/model/checkout/order.php">
+		<operation>
+			<search limit="1"><![CDATA[// Order Totals]]></search>
+			<add position="before"><![CDATA[
+
+require_once DIR_SYSTEM . '/library/cw/StripeCw/init.php';
+require_once ('StripeCw/Util.php');
+require_once ('StripeCw/Language.php');
+StripeCw_Util::setRegistry($this->registry);
+$stripecw_entities = StripeCw_Util::getEntityManager()->searchByFilterName('StripeCw_Entity_Transaction', 'loadByOrderId', array('>orderId' => $order_id));
+if(!empty($stripecw_entities)){
+	foreach($stripecw_entities as $stripecw_transaction_entity) {
+		if($stripecw_transaction_entity->getAuthorizationStatus() == 'successful' || $stripecw_transaction_entity->getAuthorizationStatus() == 'authorizing') {
+			$data['stripecw_payment_information_title'] = StripeCw_Language::_('Payment Information');
+			$data['stripecw_payment_information'] = $stripecw_transaction_entity->getTransactionObject()->getPaymentInformation();
+			break;
+		}
+	}
+}
+ 			]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/model/checkout/order.php">
+		<operation>
+			<search limit="1"><![CDATA[$text .= $language->get('text_new_products') . "\n";]]></search>
+			<add position="before"><![CDATA[
+require_once DIR_SYSTEM . '/library/cw/StripeCw/init.php';
+require_once ('Customweb/Core/Util/Html.php');
+$text .= isset($data['stripecw_payment_information']) ? Customweb_Core_Util_Html::toText($data['stripecw_payment_information']) : '';
+ 			]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/view/theme/*/template/mail/order.tpl">
+		<operation>
+			<search><![CDATA[<?php if ($comment) { ?>]]></search>
+			<add position="before"><![CDATA[
+  <?php if (isset($stripecw_payment_information)) { ?>
+  <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
+    <thead>
+      <tr>
+        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;"><?php echo $stripecw_payment_information_title; ?></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"><?php echo $stripecw_payment_information; ?></td>
+      </tr>
+    </tbody>
+  </table>
+  <?php } ?>
+ 			]]></add>
+		</operation>
+	</file>
+	
+	<file path="model/catalog/extension/total/coupon.php">
+		<operation>
+			<search limit="1"><![CDATA[foreach ($this->cart->getProducts() as $product) {]]></search>
+			<add position="replace"><![CDATA[
+		require_once DIR_SYSTEM . 'library/cw/init.php';
+		$products = empty($this->cart->getProducts()) ? StripeCw_Util::getMockCartProducts() : $this->cart->getProducts();
+		foreach ($products as $product) {
+ 			]]></add>
+		</operation>
+	</file>
+</modification>

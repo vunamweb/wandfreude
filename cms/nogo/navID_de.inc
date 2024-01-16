@@ -1,0 +1,1 @@
+<?php $navID = array(1=>"kontakt/", 2=>"vorher-nachher/", 4=>"faq/", 5=>"dsgvo-datenschutzrechtliche/", 6=>"impressum/", 7=>"widerruf/", 8=>"agb/", 9=>"versandinformation/"); ?>

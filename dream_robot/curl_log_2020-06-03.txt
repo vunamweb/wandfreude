@@ -1,0 +1,207 @@
+11:40:39 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_post_pixel-dusche_de_13863:BUTevenusESYpeteSASALusEtu8AdYPYpuZUsUhU
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => 03c1b10560d71963c7f2996c0d46b2b7e68ae22d030682fd47778c81d09e3dc1a2b5f13806262af11eaf17996356ad6223cee14e4403570481c982ecc31a5c5cd6e4a8d53467140b983e839e46ff0f8f
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+11:40:40 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/order/25_2020_05/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 216
+Order status: in Arbeit
+
+bsmar01 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*1200
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => ship name
+                            [name_2] => ship name2
+                            [street] => ship street
+                            [street_2] => ship street2
+                            [zip] => ship zip
+                            [city] => ship city
+                            [province] => ship city
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 443344
+                    [fax] => 88878
+                    [comment] => comenee
+                    [address] => Array
+                        (
+                            [name] => customer name
+                            [name_2] => customer name2
+                            [street] => customer street
+                            [street_2] => customer street2
+                            [zip] => customer zip
+                            [city] => customer city
+                            [province] => customer city
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer 03c1b10560d71963c7f2996c0d46b2b7e68ae22d030682fd47778c81d09e3dc1a2b5f13806262af11eaf17996356ad6223cee14e4403570481c982ecc31a5c5cd6e4a8d53467140b983e839e46ff0f8f
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [order_id] => 25_2020_05
+    [ack] => success
+)
+
+
+
+12:14:45 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/order/25_2020_05/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 216
+Order status: in Arbeit
+
+bsmar01 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*1200
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => gfdgfdfgfg
+                            [name_2] => gfdgfdfgfg
+                            [street] => fdsfdf
+                            [street_2] => 
+                            [zip] => 3332133
+                            [city] => fdsf
+                            [province] => Rheinland-Pfalz
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 5454545
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => gfdgfdfgfg
+                            [name_2] => gfdgfdfgfg
+                            [street] => fdsfdf
+                            [street_2] => 
+                            [zip] => 3332133
+                            [city] => fdsf
+                            [province] => Rheinland-Pfalz
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer 03c1b10560d71963c7f2996c0d46b2b7e68ae22d030682fd47778c81d09e3dc1a2b5f13806262af11eaf17996356ad6223cee14e4403570481c982ecc31a5c5cd6e4a8d53467140b983e839e46ff0f8f
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [order_id] => 25_2020_05
+    [ack] => success
+)
+
+
+

@@ -1,0 +1,3157 @@
+2019-10-03 10:36:55 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+FILE: system/library/template/twig.php
+NOT FOUND!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+FILE: system/library/d_event_manager/event.php
+NOT FOUND!
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND!
+----------------------------------------------------------------
+MOD: d_admin_menu
+FILE: admin/view/template/common/column_left.tpl
+CODE: <nav id="column-left"><?php echo $profile; ?><?php echo $menu; ?><?php echo $stats; ?></nav>
+NOT FOUND!
+CODE: <div id="stats">
+LINE: 64
+----------------------------------------------------------------
+2019-10-03 10:38:03 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+FILE: system/library/template/twig.php
+NOT FOUND!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+FILE: system/library/d_event_manager/event.php
+NOT FOUND!
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND!
+----------------------------------------------------------------
+MOD: d_admin_menu
+FILE: admin/view/template/common/column_left.tpl
+CODE: <nav id="column-left"><?php echo $profile; ?><?php echo $menu; ?><?php echo $stats; ?></nav>
+NOT FOUND!
+CODE: <div id="stats">
+LINE: 64
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 92
+----------------------------------------------------------------
+2019-10-03 10:38:12 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+FILE: system/library/template/twig.php
+NOT FOUND!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+FILE: system/library/d_event_manager/event.php
+NOT FOUND!
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND!
+----------------------------------------------------------------
+MOD: d_admin_menu
+FILE: admin/view/template/common/column_left.tpl
+CODE: <nav id="column-left"><?php echo $profile; ?><?php echo $menu; ?><?php echo $stats; ?></nav>
+NOT FOUND!
+CODE: <div id="stats">
+LINE: 64
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND!
+CODE: public function model($model, $data = array()) {
+NOT FOUND!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND!
+CODE: public function view($template, $data = array()) {
+NOT FOUND!
+CODE: public function config($config) {
+NOT FOUND!
+CODE: public function language($language) {
+NOT FOUND!
+CODE: public function __get($key) {
+NOT FOUND!
+CODE: public function __set($key, $value) {
+NOT FOUND!
+CODE: protected $registry;
+LINE: 5
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND!
+CODE: private $registry;
+NOT FOUND!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND!
+CODE: $template = new Template('basic');
+NOT FOUND!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND!
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+2020-01-23 17:56:51 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:57:02 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:58:33 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:14 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:31 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:32 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:33 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:33 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:35 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:39 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:40 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 17:59:42 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-23 18:01:25 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2020-01-24 7:54:22 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2021-04-01 11:58:50 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2021-04-01 11:58:58 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 593
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 622
+LINE: 803
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2021-04-01 12:15:01 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 594
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 623
+LINE: 804
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2021-04-01 12:15:02 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 594
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 623
+LINE: 804
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2021-04-01 12:15:27 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 594
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 623
+LINE: 804
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2021-04-01 12:44:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 594
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 623
+LINE: 804
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------
+2021-04-01 13:16:35 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+
+FILE: system/library/template/twig.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_event_manager_startup
+
+FILE: system/library/d_event_manager/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 44
+
+FILE: system/library/d_event_manager/event.php
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: system/library/d_event_manager/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 167
+
+FILE: system/library/d_event_manager/proxy.php
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: d_admin_menu
+----------------------------------------------------------------
+MOD: d_event_manager
+CODE: public function __construct($registry) {
+LINE: 8
+CODE: public function controller($route, $args = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function controller($route, $data = array()) {
+LINE: 12
+CODE: public function model($model) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function model($model, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function view($template, $data = array()) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function config($config) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function language($language) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __get($key) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __set($key, $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: protected $registry;
+LINE: 5
+
+FILE: system/engine/front.php
+CODE: while ($action) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: private $registry;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $this->registry->get('event')->trigger('controller/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/before', array(&$route, &$data));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $template = new Template('basic');
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('view/' . $route . '/after', array(&$route, &$data, &$output));
+LINE: 109
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('config/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/before', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->registry->get('event')->trigger('language/' . $route . '/after', $route);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/before', array_merge(array(&$route), $args));
+NOT FOUND - OPERATION SKIPPED!
+CODE: $result = $registry->get('event')->trigger('model/' . $route . '/after', array_merge(array(&$route, &$output), $args));
+NOT FOUND - OPERATION SKIPPED!
+
+FILE: system/engine/event.php
+CODE: foreach ($this->data as $key => $value) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: foreach ($this->data as $trigger => $actions) {
+LINE: 24
+CODE: if (!$output) {
+LINE: 98
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $output = $template->render($route . '.tpl'
+LINE: 111
+----------------------------------------------------------------
+MOD: stripecw
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'sale/recurring')) {
+LINE: 287
+CODE: <?php
+LINE: 1
+
+FILE: catalog/model/checkout/order.php
+CODE: // Order Totals
+LINE: 594
+CODE: $text .= $language->get('text_new_products') . "\n";
+LINE: 623
+LINE: 804
+
+FILE: catalog/view/theme/default/template/mail/order.tpl
+CODE: <?php if ($comment) { ?>
+LINE: 54
+----------------------------------------------------------------

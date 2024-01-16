@@ -1,0 +1,486 @@
+<modification>
+	<id>Trusted Shops module</id>
+	<version>1.1.1</version>
+	<vqmver>1.1.1</vqmver>
+	<author>RNM</author>
+	<file name="catalog/controller/common/footer.php">
+		<operation>
+			<search position="before"><![CDATA[$this->load->model('catalog/information');]]></search>
+ 			<add><![CDATA[ 
+					//echo '<pre>test1'.print_r($this->config->get('trustedshops_info'),true).'</pre>';
+					//echo '<pre>test2'.print_r($this->config->get('trustedshops_trustbadge'),true).'</pre>';
+					//echo '<pre>test3'.print_r($this->config->get('trustedshops_product'),true).'</pre>';
+					//echo '<pre>test4'.print_r($this->config->get('trustedshops_product_expert'),true).'</pre>';
+					
+					$trustedshops_info = $this->config->get('trustedshops_info');
+					$trustedshops_trustbadge = $this->config->get('trustedshops_trustbadge');
+					$trustedshops_product = $this->config->get('trustedshops_product');
+					$trustedshops_product_expert = $this->config->get('trustedshops_product_expert');
+					
+					$trustedshops_info_tsid = $trustedshops_info[$this->config->get('config_language_id')]['tsid'];
+					$data['trustedshops_info_tsid'] = $trustedshops_info_tsid;
+					
+					$data['trustedshops_info_mode'] = $trustedshops_info[$this->config->get('config_language_id')]['mode'];
+					$data['trustedshops_info_status'] = $trustedshops_info[$this->config->get('config_language_id')]['status'];
+					
+					$data['trustedshops_trustbadge_offset'] = $trustedshops_trustbadge[$this->config->get('config_language_id')]['offset'];
+					
+					if($trustedshops_trustbadge[$this->config->get('config_language_id')]['variant'] == 'reviews'){						
+						$data['trustedshops_trustbadge_variant'] = $trustedshops_trustbadge[$this->config->get('config_language_id')]['variant'];
+						$data['disableTrustbadge'] = "false";
+					} else if($trustedshops_trustbadge[$this->config->get('config_language_id')]['variant'] == 'default'){						
+						$data['trustedshops_trustbadge_variant'] = $trustedshops_trustbadge[$this->config->get('config_language_id')]['variant'];
+						$data['disableTrustbadge'] = "false";
+					} else if($trustedshops_trustbadge[$this->config->get('config_language_id')]['variant'] == 'hide'){						
+						$data['trustedshops_trustbadge_variant'] = "reviews";
+						$data['disableTrustbadge'] = "true";
+					}
+					
+					$trustedshops_trustbadge_code = str_replace("%tsid%", $trustedshops_info_tsid, $trustedshops_trustbadge[$this->config->get('config_language_id')]['code']);
+					$data['trustedshops_trustbadge_code'] = html_entity_decode($trustedshops_trustbadge_code, ENT_QUOTES, 'UTF-8');
+					
+					$this->load->model('localisation/language');
+					$language_data = $this->model_localisation_language->getLanguage($this->config->get('config_language_id'));
+					if($language_data['code'] == 'de') {
+						$data['locale'] = 'de-de';
+						$locale = 'de_DE';
+					} else {
+						$data['locale'] = 'en-gb';
+						$locale = 'en_GB';
+					}
+					
+					$data['trustedshops_display_review'] = false;
+					$data['trustedshops_display_rating'] = false;
+					$data['collectReviews'] = false;
+					if($trustedshops_info[$this->config->get('config_language_id')]['status'] == 1){
+					
+						if($trustedshops_info[$this->config->get('config_language_id')]['mode'] == "expert"){
+						
+							if($trustedshops_trustbadge[$this->config->get('config_language_id')]['collect_orders'] == 1) {
+								if($trustedshops_product_expert[$this->config->get('config_language_id')]['collect_reviews'] == 1) {
+									if($trustedshops_product_expert[$this->config->get('config_language_id')]['review_active'] == 1) {
+										$data['trustedshops_display_review'] = true;
+										$data['collectReviews'] = true;
+									} else {
+										$data['trustedshops_display_review'] = false;
+									}
+									
+									if($trustedshops_product_expert[$this->config->get('config_language_id')]['rating_active'] == 1) {
+										$data['trustedshops_display_rating'] = true;
+									} else {
+										$data['trustedshops_display_rating'] = false;
+									}
+								} else {
+									$data['trustedshops_display_review'] = false;
+									$data['trustedshops_display_rating'] = false;
+								}
+							} else {
+								$data['trustedshops_display_review'] = false;
+								$data['trustedshops_display_rating'] = false;
+							}
+
+						} else {
+							if($trustedshops_product[$this->config->get('config_language_id')]['collect_reviews'] == 1){
+								if($trustedshops_product[$this->config->get('config_language_id')]['review_active'] == 1) {
+									$data['trustedshops_display_review'] = true;
+									$data['collectReviews'] = true;			
+								} else {
+									$data['trustedshops_display_review'] = false;
+								}
+								
+								if($trustedshops_product[$this->config->get('config_language_id')]['rating_active'] == 1) {
+									$data['trustedshops_display_rating'] = true;
+								} else {
+									$data['trustedshops_display_rating'] = false;
+								}
+							} else {
+								$data['trustedshops_display_review'] = false;
+								$data['trustedshops_display_rating'] = false;
+							}
+						
+						}
+					} else {
+						$data['trustedshops_display_review'] = false;
+						$data['trustedshops_display_rating'] = false;
+						$data['collectReviews'] = false;
+					}
+
+					
+					$data['trustedshops_product_expert_review_tab_name'] = $trustedshops_product_expert[$this->config->get('config_language_id')]['review_tab_name'];
+					$data['trustedshops_product_review_tab_name'] = $trustedshops_product[$this->config->get('config_language_id')]['review_tab_name'];
+					$data['trustedshops_product_review_border_color'] = $trustedshops_product[$this->config->get('config_language_id')]['review_border_color'];
+					$data['trustedshops_product_review_star_color'] = $trustedshops_product[$this->config->get('config_language_id')]['review_star_color'];
+					
+					if(isset($trustedshops_product[$this->config->get('config_language_id')]['review_hide_empty']) && $trustedshops_product[$this->config->get('config_language_id')]['review_hide_empty'] == 1) {
+						$data['trustedshops_product_review_hide_empty'] = "true";
+					} else {
+						$data['trustedshops_product_review_hide_empty'] = "false";
+					}
+					
+					
+					$data['trustedshops_product_rating_star_color'] = $trustedshops_product[$this->config->get('config_language_id')]['rating_star_color'];
+					$data['trustedshops_product_rating_star_size'] = $trustedshops_product[$this->config->get('config_language_id')]['rating_star_size'];
+					$data['trustedshops_product_rating_font_size'] = $trustedshops_product[$this->config->get('config_language_id')]['rating_font_size'];
+					
+					if(isset($trustedshops_product[$this->config->get('config_language_id')]['rating_hide_empty']) && $trustedshops_product[$this->config->get('config_language_id')]['rating_hide_empty'] == 1) {
+						$data['trustedshops_product_rating_hide_empty'] = "false";
+					} else {
+						$data['trustedshops_product_rating_hide_empty'] = "true";
+					}
+					
+					$trustedshops_product_review_code = str_replace("%tsid%", $trustedshops_info_tsid, $trustedshops_product[$this->config->get('config_language_id')]['review_code']);
+					$trustedshops_product_review_code = str_replace("%locale%", $locale, $trustedshops_product_review_code);
+					
+					
+					$trustedshops_product_rating_code = str_replace("%tsid%", $trustedshops_info_tsid, $trustedshops_product[$this->config->get('config_language_id')]['rating_code']);
+					
+								
+					if(isset($this->request->get['route']) && $this->request->get['route'] != "product/product"){
+						$data['trustedshops_display_review'] = false;
+						$data['trustedshops_display_rating'] = false;
+					}
+
+										
+					if (isset($this->request->get['product_id'])) {
+						$product_id = (int)$this->request->get['product_id'];
+						$product_info = $this->model_catalog_product->getProduct($product_id);
+						if ($product_info) {
+							$data['product_model'] = $product_info['model'];
+							$trustedshops_product_review_code = str_replace("%sku%", $product_info['model'], $trustedshops_product_review_code);
+							
+							$trustedshops_product_rating_code = str_replace("%sku%", $product_info['model'], $trustedshops_product_rating_code);
+						}
+					} else {
+						$product_id = 0;
+						$data['product_model'] = '';
+					}
+					
+					$data['trustedshops_product_review_code'] = html_entity_decode($trustedshops_product_review_code, ENT_QUOTES, 'UTF-8');
+					$data['trustedshops_product_rating_code'] = html_entity_decode($trustedshops_product_rating_code, ENT_QUOTES, 'UTF-8');
+					
+					$data['collectorders'] = array();
+					if(isset($this->session->data['trustedshop_collectorders'])){
+						$data['collectorders'] = $this->session->data['trustedshop_collectorders'];
+						
+						unset($this->session->data['trustedshop_collectorders']);
+						unset($this->session->data['order_total']);
+					}		
+					
+					
+					
+					]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/product/product.php">
+		<operation>
+			<search position="after"><![CDATA[if ($product_info) {]]></search>
+ 			<add><![CDATA[ 
+				$trustedshops_info = $this->config->get('trustedshops_info');
+				$trustedshops_trustbadge = $this->config->get('trustedshops_trustbadge');
+				$trustedshops_product = $this->config->get('trustedshops_product');
+				$trustedshops_product_expert = $this->config->get('trustedshops_product_expert');
+				
+				if($trustedshops_info[$this->config->get('config_language_id')]['status'] == 1){
+					
+						if($trustedshops_info[$this->config->get('config_language_id')]['mode'] == "expert"){
+						
+							if($trustedshops_trustbadge[$this->config->get('config_language_id')]['collect_orders'] == 1) {
+								if($trustedshops_product_expert[$this->config->get('config_language_id')]['collect_reviews'] == 1) {
+								
+									if($trustedshops_product_expert[$this->config->get('config_language_id')]['review_active'] == 1) {
+										$data['trustedshops_display_review'] = true;
+									} else {
+										$data['trustedshops_display_review'] = false;
+									}
+									
+									if($trustedshops_product_expert[$this->config->get('config_language_id')]['rating_active'] == 1) {
+										$data['trustedshops_display_rating'] = true;
+									} else {
+										$data['trustedshops_display_rating'] = false;
+									}
+								} else {
+									$data['trustedshops_display_review'] = false;
+									$data['trustedshops_display_rating'] = false;
+								}
+							} else {
+								$data['trustedshops_display_review'] = false;
+								$data['trustedshops_display_rating'] = false;
+							}
+							
+							if($trustedshops_product_expert[$this->config->get('config_language_id')]['review_tab_name'] !='') {
+								$data['tab_trusted_shops_reviews'] = $trustedshops_product_expert[$this->config->get('config_language_id')]['review_tab_name'];
+							} else {
+								$data['tab_trusted_shops_reviews'] = $this->language->get('tab_trusted_shops_reviews');
+							}
+
+						} else {
+							if($trustedshops_product[$this->config->get('config_language_id')]['collect_reviews'] == 1){
+								if($trustedshops_product[$this->config->get('config_language_id')]['review_active'] == 1) {
+									$data['trustedshops_display_review'] = true;
+								} else {
+									$data['trustedshops_display_review'] = false;
+								}
+								
+								if($trustedshops_product[$this->config->get('config_language_id')]['rating_active'] == 1) {
+									$data['trustedshops_display_rating'] = true;
+								} else {
+									$data['trustedshops_display_rating'] = false;
+								}
+							} else {
+								$data['trustedshops_display_review'] = false;
+								$data['trustedshops_display_rating'] = false;
+							}
+							
+							if($trustedshops_product[$this->config->get('config_language_id')]['review_tab_name'] !='') {
+								$data['tab_trusted_shops_reviews'] = $trustedshops_product[$this->config->get('config_language_id')]['review_tab_name'];
+							} else {
+								$data['tab_trusted_shops_reviews'] = $this->language->get('tab_trusted_shops_reviews');
+							}
+								
+						}
+					} else {
+						$data['trustedshops_display_review'] = false;
+						$data['trustedshops_display_rating'] = false;						
+						$data['tab_trusted_shops_reviews'] = $this->language->get('tab_trusted_shops_reviews');						
+					}
+					
+					/*if($trustedshops_product[$this->config->get('config_language_id')]['review_tab_name'] !='') {
+						$data['tab_trusted_shops_reviews'] = $trustedshops_product[$this->config->get('config_language_id')]['review_tab_name'];
+					} else {
+						$data['tab_trusted_shops_reviews'] = $this->language->get('tab_trusted_shops_reviews');
+					}*/
+					//echo $data['tab_trusted_shops_reviews'].'-<br />';
+					//echo $data['trustedshops_display_review'].'-<br />';
+					//echo $data['trustedshops_display_rating'].'-<br />';
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/language/*/product/product.php">
+		<operation>
+			<search position="after"><![CDATA[$_['text_year']]]></search>
+ 			<add><![CDATA[$_['tab_trusted_shops_reviews'] = 'Trusted Shops Reviews'; ]]></add>
+		</operation>
+	</file>	
+	<file name="catalog/controller/checkout/confirm.php">
+		<operation>
+			<search position="after"><![CDATA[$this->session->data['payment_method']['code']);]]></search>
+ 			<add><![CDATA[
+			$filterBy = strtolower($this->language->get('column_total'));
+	        $locate_total = array_filter($data['totals'], function ($var) use ($filterBy) {
+	            return (strtolower($var['title']) == $filterBy);
+	        });     
+	        $locate_total = end($locate_total);
+	        $locate_total = (empty($locate_total) ? $order_data['total'] : str_replace(' ', '', preg_replace('/[^\d.,]/', '', $locate_total['text'])));
+            $locate_total = str_replace(",",".", $locate_total);
+            $locate_total = preg_replace('/\.(?=.*\.)/', '', $locate_total);
+            $locate_total = (float)$locate_total;
+ 			$this->session->data['order_total'] = $locate_total;
+ 			]]></add>
+		</operation>
+	</file>	
+	<file name="catalog/controller/checkout/success.php">
+		<operation>
+			<search position="after"><![CDATA[if (isset($this->session->data['order_id'])) {]]></search>
+ 			<add><![CDATA[  			$collectorders = array();				
+				
+			$collectorders['order_id'] = $this->session->data['order_id'];
+				
+			if ($this->customer->isLogged()) {
+				$this->load->model('account/customer');
+				$customer_info = $this->model_account_customer->getCustomer($this->customer->getId());
+				$collectorders['email'] = $customer_info['email'];
+			} else {
+				$collectorders['email'] = $this->session->data['guest']['email'];
+			}
+			
+				
+			$collectorders['total'] =  $this->session->data['order_total'];
+			//$collectorders['currency_code'] = $this->currency->getCode();
+			$collectorders['currency_code'] = $this->session->data['currency'];
+			$collectorders['payment_method'] = $this->session->data['payment_method']['code'];
+			
+
+			
+			$collectorders['order_products'] = array();
+			$this->load->model('tool/image');
+			$this->load->model('catalog/product');
+			foreach ($this->cart->getProducts() as $product) {
+			
+				if ($product['image']) {
+					$image = $this->model_tool_image->resize($product['image'], $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+				} else {
+					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+				}
+				
+				
+
+				$product_info = $this->model_catalog_product->getProduct($product['product_id']);
+				$collectorders['order_products'][] = array(
+					'product_id' => $product['product_id'],
+					'name'       => $product['name'],
+					'image'      => $image,
+					'model'      => $product['model'],
+					'sku'      	 => $product_info['sku'],
+					'ean'      	 => $product_info['ean'],
+					'mpn'      	 => $product_info['mpn'],
+					'brand'      => $product_info['manufacturer'],
+					'quantity'   => $product['quantity'],
+					'href'       => $this->url->link('product/product', 'product_id=' . $product['product_id']),
+				);
+			}
+			//echo '<pre>'.print_r($collectorders, true).'</pre>';
+			$this->session->data['trustedshop_collectorders'] = $collectorders;
+			]]></add>
+		</operation>
+	</file>					
+	<file name="catalog/view/theme/*/template/common/footer.tpl">
+		<operation>
+			<search position="before"><![CDATA[</body>]]></search>
+ 			<add><![CDATA[ 
+			
+<?php if ($trustedshops_info_status) : ?>	
+	<?php if ($collectorders) : ?>
+		<div id="trustedShopsCheckout" style="display: none;">
+			<span id="tsCheckoutOrderNr"><?php echo $collectorders['order_id']; ?></span>
+			<span id="tsCheckoutBuyerEmail"><?php echo $collectorders['email']; ?></span>
+			<span id="tsCheckoutOrderAmount"><?php echo $collectorders['total']; ?></span>
+			<span id="tsCheckoutOrderCurrency"><?php echo $collectorders['currency_code']; ?></span>
+			<span id="tsCheckoutOrderPaymentType"><?php echo $collectorders['payment_method']; ?></span>
+			<span id="tsCheckoutOrderEstDeliveryDate"></span>
+			<?php if ($collectReviews) : ?>
+				<!-- product reviews start -->
+				<!-- for each product in the basket full set of data is required -->
+				<?php foreach ($collectorders['order_products'] as $product) : ?>
+					<span class="tsCheckoutProductItem">
+						<span class="tsCheckoutProductUrl"><?php echo $product['href']; ?></span>
+						<span class="tsCheckoutProductImageUrl"><?php echo $product['image']; ?></span>
+						<span class="tsCheckoutProductName"><?php echo $product['name']; ?></span>
+						
+						<span class="tsCheckoutProductSKU"><?php echo $product['model'] ?></span>
+						<span class="tsCheckoutProductGTIN"><?php echo $product['ean'] ?></span>
+						<span class="tsCheckoutProductMPN"><?php echo $product['mpn'] ?></span>						
+						<span class="tsCheckoutProductBrand"><?php echo $product['brand'] ?></span>
+					</span>
+				<?php endforeach; ?>
+				<!-- product reviews end -->
+			<?php endif; ?>
+		</div>
+	<?php endif; ?>
+<?php endif; ?> 	
+
+
+<?php if ($trustedshops_info_status) : ?>
+    <?php if ($trustedshops_info_mode == "expert") : ?>
+        <?php echo $trustedshops_trustbadge_code; ?>
+    <?php else : ?>
+        <script type="text/javascript">
+            (function () {
+                var _tsid = '<?php echo $trustedshops_info_tsid; ?>';
+                _tsConfig = {
+                    'yOffset': '<?php echo $trustedshops_trustbadge_offset; ?>', /* offset from page bottom */
+                    'variant': '<?php echo $trustedshops_trustbadge_variant; ?>', /* text, default, small, reviews, custom, custom_reviews */
+                    'customElementId': '', /* required for variants custom and custom_reviews */
+                    'trustcardDirection': '', /* for custom variants: topRight, topLeft, bottomRight, bottomLeft */
+                    'customBadgeWidth': '', /* for custom variants: 40 - 90 (in pixels) */
+                    'customBadgeHeight': '', /* for custom variants: 40 - 90 (in pixels) */
+                    'disableResponsive': 'false', /* deactivate responsive behaviour */
+                    'disableTrustbadge': '<?php echo $disableTrustbadge; ?>', /* deactivate trustbadge */
+                    'trustCardTrigger': 'mouseenter', /* set to 'click' if you want the trustcard to be opened on click instead */
+                    'customCheckoutElementId': '' /* required for custom trustcard */
+                };
+                var _ts = document.createElement('script');
+                _ts.type = 'text/javascript';
+                _ts.charset = 'utf-8';
+                _ts.async = true;
+                _ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js';
+                var __ts = document.getElementsByTagName('script')[0];
+                __ts.parentNode.insertBefore(_ts, __ts);
+            })();
+        </script>
+    <?php endif; ?>
+<?php endif; ?> 
+
+<?php /*Product Review */ ?>
+
+<?php if ($trustedshops_display_review) : ?>
+    <?php if ($trustedshops_info_mode == "expert") : ?>
+         <?php echo $trustedshops_product_review_code; ?>
+    <?php else : ?>
+        <script type="text/javascript">
+            _tsProductReviewsConfig = {
+                tsid: '<?php echo $trustedshops_info_tsid; ?>',
+                sku: ['<?php echo $product_model; ?>'],
+                variant: 'productreviews',
+                borderColor: '<?php echo $trustedshops_product_review_border_color; ?>',
+                locale: '<?php echo $locale; ?>',
+                backgroundColor: ' #ffffff',
+                starColor: '<?php echo $trustedshops_product_review_star_color; ?>',
+                starSize: '15px',
+                ratingSummary: 'false',
+                maxHeight: '1200px',
+                'element': '#tab-trustedshop-reviews',
+                hideEmptySticker: '<?php echo $trustedshops_product_review_hide_empty; ?>',
+                introtext: '' /* optional */
+            };
+            var scripts = document.getElementsByTagName('SCRIPT'),
+                me = scripts[scripts.length - 1];
+            var _ts = document.createElement('SCRIPT');
+            _ts.type = 'text/javascript';
+            _ts.async = true;
+            _ts.charset = 'utf-8';
+            _ts.src
+                = '//widgets.trustedshops.com/reviews/tsSticker/tsProductSticker.js';
+            me.parentNode.insertBefore(_ts, me);
+            _tsProductReviewsConfig.script = _ts;
+        </script>
+    <?php endif; ?>
+<?php endif; ?>
+
+<?php /*Product Rating */ ?>
+<?php if ($trustedshops_display_rating) : ?>
+    <?php if ($trustedshops_info_mode == "expert") : ?>
+       <?php echo $trustedshops_product_rating_code; ?>
+    <?php else : ?>
+        <script type="text/javascript"
+                src="//widgets.trustedshops.com/reviews/tsSticker/tsProductStickerSummary.js"></script>
+        <script type="text/javascript">
+            var summaryBadge = new productStickerSummary();
+            summaryBadge.showSummary(
+                {
+                    'tsId': '<?php echo $trustedshops_info_tsid; ?>',
+                    'sku': ['<?php echo $product_model; ?>'],
+                    'element': '#ts_product_widget',
+                    'starColor': '<?php echo $trustedshops_product_rating_star_color; ?>',
+                    'starSize': '<?php echo $trustedshops_product_rating_star_size; ?>',
+                    'fontSize': '<?php echo $trustedshops_product_rating_font_size; ?>',
+                    'showRating': true,
+                    'scrollToReviews': false,
+					'enablePlaceholder': <?php echo $trustedshops_product_rating_hide_empty; ?>
+                }
+            );
+        </script>
+    <?php endif; ?>
+<?php endif; ?>
+
+]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/*/template/product/product.tpl">
+		<operation>
+			<search position="after"><![CDATA[<h1><?php echo $heading_title; ?></h1>]]></search>
+ 			<add><![CDATA[ <div id='ts_product_widget'></div>	]]></add>
+		</operation>
+		<operation>
+			<search position="before" offset="1"><![CDATA[<?php echo $tab_review; ?>]]></search>
+ 			<add><![CDATA[ <?php if($trustedshops_display_review) { ?>
+				<li><a href="#tab-trustedshop-reviews" data-toggle="tab"><?php echo $tab_trusted_shops_reviews; ?></a></li>
+				<?php } ?>]]></add>
+		</operation>
+		<operation>
+			<search position="before" offset="1"><![CDATA[<div class="tab-pane" id="tab-review">]]></search>
+ 			<add><![CDATA[ <?php if($trustedshops_display_review) { ?>
+				<div class="tab-pane" id="tab-trustedshop-reviews">	</div>
+				<?php } ?>]]></add>
+		</operation>
+	</file>
+</modification>

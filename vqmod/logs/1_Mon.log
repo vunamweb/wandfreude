@@ -1,0 +1,28 @@
+---------- Date: 2020-03-09 05:21:16 ~ IP : ::1 ----------
+REQUEST URI : /your-plate/category/190/83/2
+MOD DETAILS:
+   modFile   : D:\xampp7\htdocs\your-plate\vqmod/xml/theme.ocmod.xml
+   id        : 
+   version   : 1.1
+   vqmver    : 
+   author    : Plaza Theme
+
+File Name    : catalog/controller/product/product.php(3)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): 'rating'      => $rating,
+----------------------------------------------------------------------
+
+
+---------- Date: 2020-03-09 05:54:15 ~ IP : ::1 ----------
+REQUEST URI : /your-plate/zzzDuschr%C3%BCckw%C3%A4nde/Maritim,%20Meer,%20Strand,%20Sand,%20Duenen
+MOD DETAILS:
+   modFile   : D:\xampp7\htdocs\your-plate\vqmod/xml/trustedshops.xml
+   id        : Trusted Shops module
+   version   : 1.1.1
+   vqmver    : 1.1.1
+   author    : RNM
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <h1><?php echo $heading_title; ?></h1>
+----------------------------------------------------------------------
+
+

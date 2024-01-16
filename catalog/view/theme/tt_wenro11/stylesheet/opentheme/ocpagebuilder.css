@@ -1,0 +1,15 @@
+/* full width */
+.full-width{
+	margin: 0 !important;
+	padding: 0;
+}
+.full-width > .container{
+	width: 100% !important;
+	padding: 0;
+}
+.full-width > .container > .row{
+	margin: 0
+}
+.full-width > .container > .row > div{
+	padding: 0;
+}

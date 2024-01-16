@@ -1,0 +1,42 @@
+---------- Date: 2022-11-25 10:28:08 ~ IP : ::1 ----------
+REQUEST URI : /shop/plt/1/
+MOD DETAILS:
+   modFile   : /Applications/XAMPP/xamppfiles/htdocs/shop/plt/1/vqmod/xml/gaenhpro.xml
+   id        : Google Analytics Enhanced Tracking - 34016
+   version   : 2.X - 3.X
+   vqmver    : 
+   author    : opencarttools@gmail.com
+VQModObject::parseMods - Could not resolve path for [admin/controller/common/menu.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/common/menu.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/mail/order.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2022-11-25 10:28:57 ~ IP : ::1 ----------
+REQUEST URI : /shop/plt/1/
+MOD DETAILS:
+   modFile   : /Applications/XAMPP/xamppfiles/htdocs/shop/plt/1/vqmod/xml/gaenhpro.xml
+   id        : Google Analytics Enhanced Tracking - 34016
+   version   : 2.X - 3.X
+   vqmver    : 
+   author    : opencarttools@gmail.com
+VQModObject::parseMods - Could not resolve path for [admin/controller/common/menu.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/common/menu.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/mail/order.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2022-11-25 10:29:14 ~ IP : ::1 ----------
+REQUEST URI : /shop/plt/1/
+MOD DETAILS:
+   modFile   : /Applications/XAMPP/xamppfiles/htdocs/shop/plt/1/vqmod/xml/gaenhpro.xml
+   id        : Google Analytics Enhanced Tracking - 34016
+   version   : 2.X - 3.X
+   vqmver    : 
+   author    : opencarttools@gmail.com
+VQModObject::parseMods - Could not resolve path for [admin/controller/common/menu.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/common/menu.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/controller/mail/order.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
