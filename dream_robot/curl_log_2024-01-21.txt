@@ -1,0 +1,1804 @@
+05:52:03 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_juergen_wiedemann_wandfreude_de_15246:AZEmYtanUjEJAgu2EgeqYbYVUHURYSUPUjupEQUM
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+05:52:04 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+05:52:17 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+05:53:08 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+05:55:04 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+05:55:15 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+05:58:40 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+05:59:16 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+06:00:02 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+06:21:25 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+06:21:58 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b6f8b9ea62d991f9abdd58d4993034f6a9fffb83e873b85a98351bebecd9356485c07c3a74a37e403fde8f0f68b543936ac87e83a2d214b81bcbe64dcbcbf58c53a3342d11177ed649ba30e7833e9018
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+08:06:31 | HTTP-Code: 200
+URL: https://api.dreamrobot.de/rest/v1.1/token.php
+POST-Daten: Array
+(
+    [grant_type] => client_credentials
+)
+
+Header: Array
+(
+    [0] => Content-Type: application/json encoding=utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => api_juergen_wiedemann_wandfreude_de_15246:AZEmYtanUjEJAgu2EgeqYbYVUHURYSUPUjupEQUM
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [access_token] => b238dc40f90fd5b1f0803b22d2bd7cf7ac733ae8817a949d9e5bb51e44710ef68be645323691c7e837fcffb1a8f064b9b2bfe02988ab1b64e492526423d93d06e7c12ccac1650896d315f1cdace37ae5
+    [expires_in] => 3600
+    [token_type] => Bearer
+    [scope] => *
+    [ack] => success
+)
+
+
+
+08:06:32 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b238dc40f90fd5b1f0803b22d2bd7cf7ac733ae8817a949d9e5bb51e44710ef68be645323691c7e837fcffb1a8f064b9b2bfe02988ab1b64e492526423d93d06e7c12ccac1650896d315f1cdace37ae5
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+08:06:52 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b238dc40f90fd5b1f0803b22d2bd7cf7ac733ae8817a949d9e5bb51e44710ef68be645323691c7e837fcffb1a8f064b9b2bfe02988ab1b64e492526423d93d06e7c12ccac1650896d315f1cdace37ae5
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+08:10:53 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+spa05 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+spa06 Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b238dc40f90fd5b1f0803b22d2bd7cf7ac733ae8817a949d9e5bb51e44710ef68be645323691c7e837fcffb1a8f064b9b2bfe02988ab1b64e492526423d93d06e7c12ccac1650896d315f1cdace37ae5
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+08:26:46 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+ Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+ Alu Basic matt 3 mm Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b238dc40f90fd5b1f0803b22d2bd7cf7ac733ae8817a949d9e5bb51e44710ef68be645323691c7e837fcffb1a8f064b9b2bfe02988ab1b64e492526423d93d06e7c12ccac1650896d315f1cdace37ae5
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+08:38:26 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+ Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+ Alu Basic matt 3 mm Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b238dc40f90fd5b1f0803b22d2bd7cf7ac733ae8817a949d9e5bb51e44710ef68be645323691c7e837fcffb1a8f064b9b2bfe02988ab1b64e492526423d93d06e7c12ccac1650896d315f1cdace37ae5
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+08:41:17 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+ Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+ Alu Basic matt 3 mm Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b238dc40f90fd5b1f0803b22d2bd7cf7ac733ae8817a949d9e5bb51e44710ef68be645323691c7e837fcffb1a8f064b9b2bfe02988ab1b64e492526423d93d06e7c12ccac1650896d315f1cdace37ae5
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+
+08:53:59 | HTTP-Error: 404
+URL: https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/
+POST-Daten: Array
+(
+    [order] => Array
+        (
+            [infos] => Order id: 559
+Order status: Voided
+
+ Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+ Alu Basic matt 3 mm Alu Basic matt 3 mm\n
+GESPIEGELT: Nein
+Experte: Nein
+2000*900
+2000*900
+
+
+            [status] => Array
+                (
+                    [is_arrived] => 1
+                )
+
+            [shipping] => Array
+                (
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+            [customer] => Array
+                (
+                    [phone_1] => 344
+                    [fax] => 
+                    [comment] => 
+                    [address] => Array
+                        (
+                            [name] => vu nam
+                            [name_2] => vu nam
+                            [street] => 39/5z dong tam
+                            [street_2] => 
+                            [zip] => 23434
+                            [city] => hcm
+                            [province] => Bayern
+                        )
+
+                )
+
+        )
+
+)
+
+Header: Array
+(
+    [0] => Authorization: Bearer b238dc40f90fd5b1f0803b22d2bd7cf7ac733ae8817a949d9e5bb51e44710ef68be645323691c7e837fcffb1a8f064b9b2bfe02988ab1b64e492526423d93d06e7c12ccac1650896d315f1cdace37ae5
+    [1] => Content-Type: application/json encoding=utf-8
+    [2] => Accept: application/json
+    [3] => Accept-Charset: utf-8
+)
+
+DR-Curl-Optionen: Array
+(
+    [verifypeer] => 
+    [verifyhost] => 1
+    [json] => 1
+    [timeout] => 30
+    [return_header] => 
+    [user_pwd] => 
+    [cookie] => 
+    [xml] => 
+)
+
+Antwort: Array
+(
+    [error] => Array
+        (
+            [0] => Array
+                (
+                    [error] => Not Found
+                    [description] => order with ID "5271_2023_12" not found in "POST https://api.dreamrobot.de/rest/v1.1/order/5271_2023_12/".
+                    [code] => 404
+                )
+
+        )
+
+    [ack] => error
+)
+
+
+

@@ -233,7 +233,16 @@
             </table>
           </td>
           <td width="10%" style="font-size: 12px;	border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;">
-          <input type="text" class="url_hire" id="<?php echo $product['product_id']; ?>"/>
+			  <table>
+				  <?php for ($i=0; $i< count($product['another_information']->plates); $i++) { ?>
+					<?php if($product['another_information']->plates[$i]->x != 0) { ?>
+						<tr>
+							<input type="text" class="url_hire" id="url_hire<?php echo $i."_".$product['product_id']; ?>" value="<?php echo $product['another_information']->plates[$i]->file; ?>"/>
+						</tr>
+					<?php } ?>
+				  <?php } ?>
+				</table>
+          
           </td>
         <?php } ?>
      </tr>

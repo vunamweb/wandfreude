@@ -22,9 +22,9 @@ RewriteEngine On
 # If your opencart installation does not run on the main web folder make sure you folder it does run in ie. / becomes /shop/
 
 RewriteCond %{HTTPS} !=on
-#RewriteRule ^(.*)$ http://localhost/shop/plt/1/$1 [R=301,L]
+#RewriteRule ^(.*)$ http://localhost/$1 [R=301,L]
 
-RewriteBase /shop/plt/1/
+RewriteBase /
 RewriteRule ^konfigurator/(.*) index.php?route=product/product&category_type=1&type_product=1&number_plate=$1
 RewriteRule ^duschrueckwaende-kuechenrueckwaende-individuell-gestalten/(.*) index.php?route=product/product&category_type=1&type_product=1&number_plate=$1
 RewriteRule ^product/(.*)/(.*)/(.*) index.php?route=product/product&product_id=$1&category=$2&type_product=1&category_type=1&number_plate=$3&type=0

@@ -1050,11 +1050,11 @@ class ControllerApiOrder extends Controller
         return $token;
     }
 
-    public function createOrderPrint($order_id)
+    public function createOrderPrint($order_id=559)
     {
         $urls = $_POST['urls'];
         $urls = json_decode($urls); 
-
+		//print_r($urls);exit();
         $body = new \stdClass;
 
         $access_token = $this->getTokenPrint();
@@ -1089,6 +1089,7 @@ class ControllerApiOrder extends Controller
 
         foreach ($products as $product)
         {
+			$this->edit_product($product['product_id']);
             $nameUrl = 'data_' . $product["product_id"];
             $url = $urls->$nameUrl;
 
@@ -1173,7 +1174,7 @@ class ControllerApiOrder extends Controller
 
         $body->items = $items;
 
-        //print_r(json_encode($body)); die();
+        print_r(json_encode($body)); die();
 
         $baseUrl = 'https://staging.orders.api.erfolgreich-drucken.de';
         $url = $baseUrl . '/v1/orders';
@@ -1202,6 +1203,7 @@ class ControllerApiOrder extends Controller
 
     public function createOrderInDreamRobot($order_id)
     {
+		
         $access_token = $this->getToken();
 
         $data['products'] = array();
@@ -1215,12 +1217,14 @@ class ControllerApiOrder extends Controller
         $name_customer = $order_info['firstname'] . $order_info['lastname'];
 
         $products = $this->model_checkout_order->getOrderProducts($order_id);
+		
         foreach ($products as $product)
         {
+			$this->edit_product($product['product_id']);
             $order_another_information_query = $this->db->query("SELECT another_information FROM " .
                 DB_PREFIX . "product WHERE product_id = '" . (int)$product['product_id'] . "'");
             $order_another_information_query = $order_another_information_query->rows;
-
+			
             $data['products'][] = array(
                 'another_information' => ($order_another_information_query[0]['another_information'] !=
                     '') ? json_decode($order_another_information_query[0]['another_information']) :
@@ -1229,14 +1233,14 @@ class ControllerApiOrder extends Controller
                 'model' => $product['model'],
                 'quantity' => $product['quantity'],
                 'price' => $product['price']);
+				
+				
         }
 
         $id_count = 0;
 
         foreach ($data['products'] as $item)
         {
-            $name = $item['name'];
-
             $another_information = $item['another_information'];
             $plates = $another_information->plates;
             $GESPIEGELT = ($another_information->mirror == 'false') ? 'GESPIEGELT: Nein' :
@@ -1249,6 +1253,7 @@ class ControllerApiOrder extends Controller
             $infor_plate = '';
             for ($i = 0; $i < count($plates); $i++)
             {
+				
                 if ($plates[$i]->x != 0)
                     $infor_plate .= $plates[$i]->y . '*' . $plates[$i]->x . "\n";
             }
@@ -1357,12 +1362,47 @@ class ControllerApiOrder extends Controller
                         'province' => $customer_province,
                         ))), ), 'POST', $rest_header);
     }
+	
+	public function edit_product($product_id=1673) {
+		$urls = $_POST['urls'];
+        $urls = json_decode($urls);
+		//print_r($urls);
+		//echo $urls->data_url_hire0_1673;
+		$order_another_information_query = $this->db->query("SELECT another_information FROM " .
+                DB_PREFIX . "product WHERE product_id = '" . (int)$product_id . "'");
+		$order_another_information_query = $order_another_information_query->rows;
+		$another_information=($order_another_information_query[0]['another_information'] !=
+                    '') ? json_decode($order_another_information_query[0]['another_information']) :
+                    '';
+		//print_r($_POST'');exit();
+		$plates=$another_information->plates;
+		$i =0;
+		foreach($plates as & $obj) {
+			$url_hire="data_url_hire".$i."_".$product_id;
+			$obj->file = $urls->$url_hire;
+			$i++;
+		}
+		
+		//print_r($another_information);exit();
+		
+		
+		//$json = array();
+		
+
+		$this->db->query("UPDATE " . DB_PREFIX . "product SET another_information = '" . json_encode($another_information) . "', date_modified = NOW() WHERE product_id = '" . (int)$product_id . "'");
+
+		$json['success'] = 'success';
+
+		$this->response->addHeader('Content-Type: application/json');
+		$this->response->setOutput(json_encode($json));
+
+	}
 
     public function history()
     {
 		
         $status_order = $this->request->post['order_status_id'];
-
+		
         $this->load->language('api/order');
 
         $json = array();
