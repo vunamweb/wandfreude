@@ -1,4 +1,6 @@
-<?php // echo $products[0]['another_information']->mirror ?>
+<?php 
+	//print_r($products);exit();
+// echo $products[0]['another_information']->mirror ?>
 <?php echo $header; ?><?php echo $column_left; ?>
 <div id="content">
   <div class="page-header">

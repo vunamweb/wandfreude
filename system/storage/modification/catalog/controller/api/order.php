@@ -1052,11 +1052,12 @@ class ControllerApiOrder extends Controller
 
     public function createOrderPrint($order_id=559)
     {
+		//echo "dsadsa";exit();
         $urls = $_POST['urls'];
         $urls = json_decode($urls); 
 		//print_r($urls);exit();
         $body = new \stdClass;
-
+		
         $access_token = $this->getTokenPrint();
         //echo $access_token; die();
 
@@ -1086,9 +1087,11 @@ class ControllerApiOrder extends Controller
 
         $products = $this->model_checkout_order->getOrderProducts($order_id);
         $items = array();
-
+        
+		
         foreach ($products as $product)
         {
+			
 			$this->edit_product($product['product_id']);
             $nameUrl = 'data_' . $product["product_id"];
             $url = $urls->$nameUrl;
@@ -1103,16 +1106,20 @@ class ControllerApiOrder extends Controller
             $order_another_information_query = $order_another_information_query->rows;
 
             $another_information = json_decode($order_another_information_query[0]['another_information']);
+			
             $numberPlates = $another_information->plates;
             $material = $another_information->material;
-
+			foreach($numberPlates as $plate) {
+				
+			}
             $attributes = array();
             $x = 0; $y;
-
+			$file_tmp=="";
            foreach($numberPlates as $plate) {
                 if($plate->x != 0 && $plate->y != 0) {
                     $x = $x + $plate->x;
                     $y = $plate->y;
+					$file_tmp=$plate->file;
                 }
             }
 
@@ -1156,25 +1163,44 @@ class ControllerApiOrder extends Controller
 
             $attributes[12]->name = 'DesignCount';
             $attributes[12]->value = "1";
-            
 
-            $file = new \stdClass;
-            $file->url = $url;
+
+            
+            
 
             $item->product->productId = 'PRD-J9RKYK6LS'; //. $product['product_id'];
             //echo $item->product->productId; die();
             $item->product->quantity = $product['quantity'];
             $item->product->customName = $product['name'];
             $item->product->attributes = $attributes;
-
-            $item->files = $file;
+			
+			$k=0;
+			foreach($numberPlates as $plate) {
+				
+				
+				if($plate->file){
+					$file = new \stdClass;
+					$file->url = $plate->file;
+					
+					$item->files = $file;
+					array_push(	$items,	clone $item);		
+					//exit();
+					//$items[] = $item;
+					//print_r($items);
+					//exit();
+				}
+				
+            }
+			
+			//print_r($items);exit();
+			
             
-            $items[] = $item;
+            
         }
 
         $body->items = $items;
 
-        print_r(json_encode($body)); die();
+        //print_r(json_encode($body)); die();
 
         $baseUrl = 'https://staging.orders.api.erfolgreich-drucken.de';
         $url = $baseUrl . '/v1/orders';
@@ -1203,7 +1229,9 @@ class ControllerApiOrder extends Controller
 
     public function createOrderInDreamRobot($order_id)
     {
-		
+		$urls = $_POST['urls'];
+        $urls = json_decode($urls); 
+		//print_r($urls);exit();
         $access_token = $this->getToken();
 
         $data['products'] = array();
@@ -1217,13 +1245,16 @@ class ControllerApiOrder extends Controller
         $name_customer = $order_info['firstname'] . $order_info['lastname'];
 
         $products = $this->model_checkout_order->getOrderProducts($order_id);
-		
+		$k=0;
         foreach ($products as $product)
         {
 			$this->edit_product($product['product_id']);
             $order_another_information_query = $this->db->query("SELECT another_information FROM " .
                 DB_PREFIX . "product WHERE product_id = '" . (int)$product['product_id'] . "'");
             $order_another_information_query = $order_another_information_query->rows;
+			$plates = $another_information->plates;
+			$file_tmp="data_url_hire".$k."_".$product['product_id'];
+           // echo $file_tmp;exit();
 			
             $data['products'][] = array(
                 'another_information' => ($order_another_information_query[0]['another_information'] !=
@@ -1232,11 +1263,13 @@ class ControllerApiOrder extends Controller
                 'name' => $product['name'],
                 'model' => $product['model'],
                 'quantity' => $product['quantity'],
-                'price' => $product['price']);
+                'price' => $product['price'],
+				'file' => $urls->$file_tmp
+				);
 				
 				
         }
-
+	//print_r($data);
         $id_count = 0;
 
         foreach ($data['products'] as $item)
@@ -1251,11 +1284,14 @@ class ControllerApiOrder extends Controller
             $name .= ' ' . $another_information->material;
 
             $infor_plate = '';
+			$file_tmp=="";
             for ($i = 0; $i < count($plates); $i++)
             {
 				
-                if ($plates[$i]->x != 0)
+                if ($plates[$i]->x != 0){
                     $infor_plate .= $plates[$i]->y . '*' . $plates[$i]->x . "\n";
+					$file_tmp=$plate->file;
+				}
             }
             $infor_plates[] = $name . '\n' . "\n" . $GESPIEGELT . "\n" . $Experte . "\n" . $infor_plate;
 
@@ -1271,8 +1307,9 @@ class ControllerApiOrder extends Controller
 
             $id_count++;
         }
+		
 
-        //print_r($lines); die();
+        //print_r($products); die();
 
         include ('./dream_robot/settings.inc.php');
 
@@ -1285,7 +1322,7 @@ class ControllerApiOrder extends Controller
                     $portal_account_id, 'order' => array('customer' => array('email' => '' . $order_info['email'] .
                             '', 'address' => array('name' => '' . $name_customer . '', )), 'line' => $lines)),
                 'POST', $rest_header);
-            //print_r($response);
+            print_r($response);
 
             $order_id_dream_robot = $response['content']['order_id'];
 
