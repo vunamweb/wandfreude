@@ -1178,10 +1178,15 @@ class ControllerApiOrder extends Controller
 			foreach($numberPlates as $plate) {
 				
 				
-				if($plate->file){
-					$file = new \stdClass;
-					$file->url = $plate->file;
+				if($plate->x != 0 && $plate->y != 0){
 					
+					$attributes[4]->name = 'CustomWidth';
+					$attributes[4]->value = ($plate->x <= 3000) ? $plate->x : 3000;
+
+					$attributes[5]->name = 'CustomHeight';
+					$attributes[5]->value = ($plate->y <= 1500) ? $plate->y : 1500;
+					$file = new \stdClass;
+					$file->url = $plate->file;					
 					$item->files = $file;
 					array_push(	$items,	clone $item);		
 					//exit();
@@ -1200,7 +1205,7 @@ class ControllerApiOrder extends Controller
 
         $body->items = $items;
 
-        //print_r(json_encode($body)); die();
+        print_r(json_encode($body)); die();
 
         $baseUrl = 'https://staging.orders.api.erfolgreich-drucken.de';
         $url = $baseUrl . '/v1/orders';
@@ -1501,7 +1506,7 @@ class ControllerApiOrder extends Controller
         //echo 'nad'; die();
         $this->createOrderInDreamRobot($order_id);
 
-        if($status_order == 29)
+       // if($status_order == 29)
           $this->createOrderPrint($order_id);
           
         //print_r($json); exit();
