@@ -7,7 +7,7 @@ class ControllerApiOrder extends Controller
 	
     public function add()
     {
-		echo "add "; exit();
+		//echo "add "; exit();
         $this->load->language('api/order');
 
         $json = array();
@@ -447,7 +447,7 @@ class ControllerApiOrder extends Controller
 
     public function edit()
     {
-		echo "edit "; exit();
+		//echo "edit "; exit();
         $this->load->language('api/order');
 
         $json = array();
@@ -861,7 +861,7 @@ class ControllerApiOrder extends Controller
 
     public function delete()
     {
-		echo "delete "; exit();
+		//echo "delete "; exit();
         $this->load->language('api/order');
 
         $json = array();
@@ -909,7 +909,7 @@ class ControllerApiOrder extends Controller
 
     public function info()
     {
-		echo "info "; exit();
+		//echo "info "; exit();
         $this->load->language('api/order');
 
         $json = array();
@@ -1327,7 +1327,7 @@ class ControllerApiOrder extends Controller
                     $portal_account_id, 'order' => array('customer' => array('email' => '' . $order_info['email'] .
                             '', 'address' => array('name' => '' . $name_customer . '', )), 'line' => $lines)),
                 'POST', $rest_header);
-            print_r($response);
+            //print_r($response);
 
             $order_id_dream_robot = $response['content']['order_id'];
 
