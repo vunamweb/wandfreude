@@ -1205,7 +1205,7 @@ class ControllerApiOrder extends Controller
 
         $body->items = $items;
 
-        print_r(json_encode($body)); die();
+        //print_r(json_encode($body)); die();
 
         $baseUrl = 'https://staging.orders.api.erfolgreich-drucken.de';
         $url = $baseUrl . '/v1/orders';
@@ -1506,7 +1506,7 @@ class ControllerApiOrder extends Controller
         //echo 'nad'; die();
         $this->createOrderInDreamRobot($order_id);
 
-       // if($status_order == 29)
+        if($status_order == 29)
           $this->createOrderPrint($order_id);
           
         //print_r($json); exit();
