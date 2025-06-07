@@ -1,6 +1,6 @@
 # Wandfreude.de - Custom OpenCart E-commerce Store
 
-![Wandfreude Logo](https://www.wandfreude.de/image/catalog/logo.png)
+![Wandfreude Logo](https://www.wandfreude.de/image/Wandfreude-Logo.svg)
 
 **Wandfreude.de** is a custom OpenCart-powered e-commerce platform specializing in high-quality wall tattoos, wall decals, and decorative vinyl designs for home interiors. This project is built for performance, flexibility, and a seamless user experience on both desktop and mobile platforms.
 
