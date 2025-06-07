@@ -1,6 +1,6 @@
 # Wandfreude.de - Custom OpenCart E-commerce Store
 
-![Wandfreude Logo](https://www.wandfreude.de/image/Wandfreude-Logo.svg)
+![Wandfreude Logo](image/Wandfreude-Logo.svg)
 
 **Wandfreude.de** is a custom OpenCart-powered e-commerce platform specializing in high-quality wall tattoos, wall decals, and decorative vinyl designs for home interiors. This project is built for performance, flexibility, and a seamless user experience on both desktop and mobile platforms.
 
@@ -65,12 +65,12 @@ Compatibility with popular OpenCart extensions
 📸 Screenshots
 | Page | Description |
 |------|-------------|
-| ![Homepage](screenshots/homepage.png) | **Homepage**: Modern, responsive homepage showcasing featured categories, offers, and custom-designed wall decals. |
-| ![Category Page](screenshots/category.png) | **Category Page**: Clean grid layout with filters for size, color, theme, and more. Users can easily find the right product. |
-| ![Product Page](screenshots/product.png) | **Product Page**: Detailed view with high-resolution images, live color preview, size options, and related products. |
-| ![Shopping Cart](screenshots/cart.png) | **Shopping Cart**: Simple and intuitive cart system with editable quantities, shipping estimator, and coupon support. |
-| ![Checkout Page](screenshots/checkout.png) | **Checkout Page**: Guest or registered checkout with secure payment integration (PayPal, Klarna, etc.). |
-| ![Admin Dashboard](screenshots/admin-dashboard.png) | **Admin Panel**: Clean and powerful admin interface to manage orders, products, customers, and SEO settings. |
+| ![Homepage](image/1.png) | **Homepage**: Modern, responsive homepage showcasing featured categories, offers, and custom-designed wall decals. |
+| ![Category Page](image/2.png) | **Category Page**: Clean grid layout with filters for size, color, theme, and more. Users can easily find the right product. |
+| ![Product Page](image/3.png) | **Product Page**: Detailed view with high-resolution images, live color preview, size options, and related products. |
+| ![Shopping Cart](image/4.png) | **Shopping Cart**: Simple and intuitive cart system with editable quantities, shipping estimator, and coupon support. |
+| ![Checkout Page](image/5.png) | **Checkout Page**: Guest or registered checkout with secure payment integration (PayPal, Klarna, etc.). |
+| ![Admin Dashboard](image/6.png) | **Admin Panel**: Clean and powerful admin interface to manage orders, products, customers, and SEO settings. |
 
 
 
